@@ -1,7 +1,9 @@
 # Libft
 42's Libft project. For personal use as Git submodule in other projects.
 
-extra functions are:\n
+extra functions are:
+
+
 ft_splitcount.c - counts number of substrings delimited by char c.
 ft_sublen.c - counts length of substring until char c delimiter.
 ft_strnlen.c - copycat of strnlen internal c function.
