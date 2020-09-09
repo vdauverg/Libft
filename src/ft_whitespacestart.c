@@ -6,7 +6,7 @@
 /*   By: vdauverg <vdauverg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/09 12:35:37 by vdauverg          #+#    #+#             */
-/*   Updated: 2020/09/09 12:38:13 by vdauverg         ###   ########.fr       */
+/*   Updated: 2020/09/09 12:49:51 by vdauverg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ char	*ft_whitespacestart(const char *str)
 	if (!str || !*str)
 		return (NULL);
 
-	while (!ft_iswhitespace(*str))
+	while (*str && !ft_iswhitespace(*str))
 		str++;
 
-	return (str);
+	return ((char *)str);
 }
