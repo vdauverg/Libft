@@ -6,7 +6,7 @@
 /*   By: vdauverg <vdauverg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/14 14:18:05 by vdauverg          #+#    #+#             */
-/*   Updated: 2020/09/09 12:38:31 by vdauverg         ###   ########.fr       */
+/*   Updated: 2020/09/09 12:50:54 by vdauverg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ char			*ft_strndup(const char *s1, size_t n);
 size_t			ft_strnlen(const char *s, size_t maxlen);
 int				ft_sublen(const char *s, const char c);
 int				ft_iswhitespace(char c);
-char			*ft_whitespaceend(char *str);
+char			*ft_whitespaceend(const char *str);
 char			*ft_whitespacestart(const char *str);
 void			ft_outputstr(int fd, char *s);
 char			*ft_strjoinfreefirst(char *s1, const char *s2);
