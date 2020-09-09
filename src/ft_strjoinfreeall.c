@@ -6,13 +6,13 @@
 /*   By: vdauverg <vdauverg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/09 10:26:22 by vdauverg          #+#    #+#             */
-/*   Updated: 2020/09/09 10:26:37 by vdauverg         ###   ########.fr       */
+/*   Updated: 2020/09/09 11:52:03 by vdauverg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-char	*ft_strjoinfreeall(const char *s1, const char *s2)
+char	*ft_strjoinfreeall(char *s1, char *s2)
 {
 	char	*new;
 
