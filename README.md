@@ -19,3 +19,5 @@ ft_iswhitespace - checks whether a character is any of: " ", "\t", "\r", "\n", "
 ft_whitespaceend - returns a pointer to the character after the end of whitespace in the given string.
 
 ft_outputstr - faster version of ft_putstr. Only uses one write call.
+
+get_next_line - reads one line at a time from up to 2048 file descriptors. From the original 42 get_next_line project, put here for ease of use.
