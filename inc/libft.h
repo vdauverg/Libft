@@ -6,7 +6,7 @@
 /*   By: vincent <vincent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/14 14:18:05 by vdauverg          #+#    #+#             */
-/*   Updated: 2020/09/10 19:32:40 by vincent          ###   ########.fr       */
+/*   Updated: 2020/10/07 14:53:47 by vincent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,5 +100,6 @@ char			*ft_strjoinfreeall(char *s1, char *s2);
 char			*ft_freefirst(char *s1, char *s2, char *(*f)(const char *s1, const char *s2));
 char			*ft_freelast(char *s1, char *s2, char *(*f)(const char *s1, const char *s2));
 char			*ft_freeall(char *s1, char *s2, char *(*f)(const char *s1, const char *s2));
+int				ft_alen(const void **arr);
 
 #endif
