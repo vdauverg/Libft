@@ -6,7 +6,7 @@
 /*   By: vincent <vincent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 14:47:16 by vincent           #+#    #+#             */
-/*   Updated: 2020/10/07 14:53:36 by vincent          ###   ########.fr       */
+/*   Updated: 2020/10/07 16:11:30 by vincent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_alen(const void **arr)
 		return (-1);
 
 	i = 0;
-	while (arr[i])
+	while (arr[i] != NULL)
 		i++;
 	
 	return (i);
