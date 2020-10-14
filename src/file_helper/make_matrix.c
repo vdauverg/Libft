@@ -6,7 +6,7 @@
 /*   By: vincent <vincent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 11:38:09 by vincent           #+#    #+#             */
-/*   Updated: 2020/10/13 17:03:26 by vincent          ###   ########.fr       */
+/*   Updated: 2020/10/13 22:28:34 by vincent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,11 @@ char	**make_matrix(char c, t_read *read)
 	return (mat);
 }
 
-t_read	*matrix_from_file(char c, char *file)
+t_read	*matrix_from_file(char c, char *file, int fd)
 {
 	t_read	*read;
 
-	if (!(read = read_file(file)))
+	if (!(read = read_file(file, fd)))
 		return (NULL);
 	if (!(read->matrix = make_matrix(c, read)))
 		return (NULL);

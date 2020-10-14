@@ -6,7 +6,7 @@
 /*   By: vincent <vincent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 15:31:51 by vincent           #+#    #+#             */
-/*   Updated: 2020/10/13 17:05:07 by vincent          ###   ########.fr       */
+/*   Updated: 2020/10/13 22:20:45 by vincent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,14 @@ t_line	*assign_line(char *str, t_read *read, t_line *prev)
 	return (line);
 }
 
-t_read	*read_file(char *file)
+t_read	*read_file(char *file, int fd)
 {
-	int		fd;
 	int		len;
 	char	*str;
 	t_read	*read;
 	t_line	*line;
 
-	if ((fd = open(file, O_RDONLY)) == -1)
+	if (file && (fd = open(file, O_RDONLY)) == -1)
 		return (NULL);
 	len = 0;
 	if (!(read = (t_read *)malloc(sizeof(t_read))))
