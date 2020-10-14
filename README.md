@@ -23,3 +23,28 @@ ft_outputstr - faster version of ft_putstr. Only uses one write call.
 ft_alen - counts length of void array.
 
 get_next_line - reads one line at a time from up to 2048 file descriptors. From the original 42 get_next_line project, put here for ease of use.
+
+
+
+FILE_HELPER:
+
+Extre functionality to help read from files and convert them into t_read struct. Create 2d matrices from a t_read. Useful for graphics projects in creating map matrices from a file.
+
+
+STRUCTS:
+
+typedef struct	s_line
+{
+	struct s_line	*next;
+	struct s_line	*prev;
+	char			*str;
+}				t_line;
+
+typedef struct	s_read
+{
+	int				w;
+	int				h;
+	char			**matrix;
+	struct s_line	*lines;
+	
+}				t_read;
